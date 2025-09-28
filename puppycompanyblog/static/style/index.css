@@ -1,0 +1,183 @@
+/* Home Page Blog Cards */
+.blog-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 16px;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.3s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-card::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #c2e9fb 0%, #81a4fd 100%);
+    opacity: 0.07;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.blog-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px) scale(1.01);
+}
+
+.blog-title {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+.blog-title:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.blog-meta {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+    font-style: italic;
+    letter-spacing: 0.1px;
+    z-index: 1;
+    position: relative;
+}
+
+.blog-excerpt {
+    font-size: 1.08rem;
+    color: #343a40;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    z-index: 1;
+    position: relative;
+}
+
+/* Read More Button */
+.blog-readmore-btn {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background: linear-gradient(90deg, #007bff 80%, #81a4fd 100%);
+    color: #fff;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0,123,255,0.15);
+    transition: background 0.2s, box-shadow 0.2s;
+    margin-top: 0.5rem;
+    z-index: 1;
+    position: relative;
+}
+
+.blog-readmore-btn:hover {
+    background: linear-gradient(90deg, #0056b3 80%, #81a4fd 100%);
+    box-shadow: 0 4px 12px rgba(0,123,255,0.22);
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+    background: linear-gradient(120deg, #e9ecef 80%, #c2e9fb 100%);
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+
+    position: relative;
+    overflow: hidden;
+}
+.jumbotron::after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    bottom: -50px;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #81a4fd 0%, #e9ecef 100%);
+    opacity: 0.09;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.jumbotron h1 {
+    font-size: 2.6rem;
+    margin-bottom: 0.7rem;
+    font-weight: 700;
+    color: #007bff;
+    letter-spacing: 1.2px;
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron .lead {
+    font-size: 1.25rem;
+    color: #495057;
+    font-style: italic;
+    z-index: 1;
+    position: relative;
+}
+
+/* Pagination Styling */
+.custom-pagination {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-pagination .page-item {
+    display: flex;
+    align-items: center;
+}
+
+.custom-pagination .page-link {
+    min-width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px;
+    padding: 0 12px;
+    border-radius: 50%;
+    border: 1.5px solid #dee2e6;
+    background: #fff;
+    color: #007bff;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.custom-pagination .page-item.active .page-link {
+    background: linear-gradient(90deg, #007bff 80%, #81a4fd 100%);
+    color: #fff;
+    border-color: #007bff;
+    font-weight: 700;
+}
+
+.custom-pagination .page-item.disabled .page-link {
+    color: #adb5bd;
+    background: #f8f9fa;
+    cursor: not-allowed;
+    border-color: #dee2e6;
+}
+
+.custom-pagination .page-link:hover:not(.disabled):not(.active) {
+    background: #e9ecef;
+    color: #0056b3;
+    border-color: #81a4fd;
+    box-shadow: 0 4px 8px rgba(0,123,255,0.09);
+}

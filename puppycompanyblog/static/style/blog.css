@@ -1,0 +1,225 @@
+/* Blog Post View Page */
+.jumbotron {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.jumbotron h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.jumbotron h4,
+.jumbotron h5 {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+}
+
+.jumbotron p.lead {
+    font-size: 1.1rem;
+    color: #34495e;
+    line-height: 1.6;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header,
+.modal-footer {
+    border: none;
+    background-color: #f9f9f9;
+}
+
+.modal-title {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.modal-body {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+.btn-outline-danger {
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+    background-color: transparent;
+}
+
+.btn-outline-danger:hover {
+    color: #fff;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+
+
+/* Create Post Form */
+.container form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+}
+.btn-lg {
+    font-size: 1.0rem;
+    padding: 0.4rem 1.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Cancel Button */
+.btn-outline-secondary {
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Yes Delete Button */
+.btn-danger {
+    font-size: 1.0rem;
+    padding: 0.4rem 1.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+    color: #fff;
+}
+
+
+
+/* Blog Post Links */
+.container h2 a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.container h2 a:hover {
+    text-decoration: underline;
+}
+.btn-submit {
+    font-size: 1.0rem;
+    padding: 0.4rem 1.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-submit:hover {
+    background-color: #17a2b8;
+    color: #fff;
+    border-color: #17a2b8;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.page-item.active .page-link {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: white;
+}
+
+.page-link {
+    color: #3498db;
+}
+
+.page-link:hover {
+    background-color: #ecf0f1;
+}
+
+/* Blog Text Area */
+textarea.form-control {
+    min-height: 200px;
+    resize: vertical;
+}
+.btn-outline-primary,
+.btn-outline-danger {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-primary:hover {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #3498db;
+}
+
+.btn-outline-danger:hover {
+    background-color: #e74c3c;
+    color: #fff;
+    border-color: #e74c3c;
+}
+
+.btn-outline-primary {
+    color: #007bff;
+    border: 1px solid #007bff;
+    background-color: transparent;
+}
+footer {
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+footer .text-primary {
+    font-weight: bold;
+}
+
+.preserve-format {
+  white-space: pre-wrap;
+}
+

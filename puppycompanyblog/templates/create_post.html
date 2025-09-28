@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+        <div class="container">
+
+            <form method="POST" action="{% if post %}{{ url_for('blog_posts.update', blog_post_id=post.id) }}{% else %}{{ url_for('blog_posts.create_post') }}{% endif %}">
+
+
+            {{form.hidden_tag()}}
+                <div class="form-group">
+                    {{form.title.label(class="form-control-label")}}
+                    {{form.title(class="form-control form-control-lg")}}
+                </div>
+                <div class="form-group">
+                    {{form.text.label(class="form-control-label")}}
+                    {{form.text(class="form-control form-control-lg")}}
+                </div>
+               <div class="form-group text-center">
+                {{ form.submit(class="btn btn-outline-info btn-submit") }}
+                </div>
+            </form>
+
+        </div>
+{% endblock %}
