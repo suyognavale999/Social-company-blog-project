@@ -8,7 +8,7 @@
 * Provides a simple, clean, and responsive user interface.
 * Built using Flask, SQLAlchemy, Jinja2, and Bootstrap.
 
-==================================================================================================
+============================================================================================
 ## Project Setup:
 
 1. Clone the Repository
